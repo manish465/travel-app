@@ -1,0 +1,37 @@
+.hero {
+    margin: 60px 10%;
+    background-image: url("../../assets/hero-background.jpg");
+    background-size: cover;
+    border-radius: 2rem;
+    padding: 60px;
+    .hero-heading {
+        color: #ececec;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .hero-text {
+        color: #ececec;
+        margin-top: 60px;
+        width: 600px;
+    }
+    .hero-button {
+        margin-top: 60px;
+        display: flex;
+        .hero-button-one {
+            border-radius: 0.5rem;
+            color: #ececec;
+            background-color: #2f89fc;
+            padding: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .hero-button-two {
+            margin-left: 10px;
+            border-radius: 0.5rem;
+            color: #ececec;
+            border: solid 3px #ececec;
+            padding: 25px;
+            cursor: pointer;
+        }
+    }
+}

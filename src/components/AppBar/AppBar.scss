@@ -1,10 +1,12 @@
 .app-bar {
+    color: #40514e;
     margin: auto 10%;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 
     .app-bar-logo {
+        cursor: pointer;
         svg {
             font-size: 1.5rem;
         }
@@ -17,9 +19,10 @@
     .app-bar-tabs {
         display: flex;
         margin: {
-            right: 50px;
+            right: 140px;
         }
         .app-bar-tab {
+            cursor: pointer;
             margin: 0 30%;
         }
     }
