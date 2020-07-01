@@ -1,7 +1,13 @@
 import React from "react";
 
+import AppBar from "./components/AppBar";
+
 const App = () => {
-    return <div>Hello World</div>;
+    return (
+        <>
+            <AppBar />
+        </>
+    );
 };
 
 export default App;
