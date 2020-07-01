@@ -1,0 +1,26 @@
+.app-bar {
+    margin: auto 10%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .app-bar-logo {
+        svg {
+            font-size: 1.5rem;
+        }
+        .app-bar-logo-text {
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+    }
+
+    .app-bar-tabs {
+        display: flex;
+        margin: {
+            right: 50px;
+        }
+        .app-bar-tab {
+            margin: 0 30%;
+        }
+    }
+}
