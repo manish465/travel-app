@@ -1,0 +1,35 @@
+.services {
+    text-align: center;
+    margin: 0 20%;
+    .services-heading {
+        color: #40514e;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .services-features {
+        background-color: #30e3ca;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        .services-feature {
+            width: 300px;
+            margin: 2% 2%;
+            background-color: #fff4e3;
+            border-radius: 0.5rem;
+            .service-feature-title {
+                margin-top: 22px;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #636350;
+            }
+            .service-feature-text {
+                margin: 28px auto;
+                text-align: left;
+                width: 200px;
+                color: #636350;
+            }
+        }
+    }
+}
