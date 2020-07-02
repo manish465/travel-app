@@ -1,7 +1,4 @@
-import React, { useEffect } from "react";
-
-import img1 from "../../assets/1.jpeg";
-import img2 from "../../assets/hero-background.jpg";
+import React from "react";
 
 import "./Hero.scss";
 
