@@ -1,13 +1,15 @@
+@import "../../GlobalStyles/color";
+
 .services {
     text-align: center;
     margin: 0 20%;
     .services-heading {
-        color: #40514e;
+        color: var(--text-color-primary);
         font-size: 3rem;
         font-weight: bold;
     }
     .services-features {
-        background-color: #30e3ca;
+        background-color: var(--secondary-color);
         border-radius: 0.5rem;
         display: flex;
         flex-wrap: wrap;
@@ -16,22 +18,22 @@
         .services-feature {
             width: 300px;
             height: 400px;
-            box-shadow: 2px 2px 10px #636350;
+            box-shadow: 2px 2px 10px var(--text-color-primary);
             margin: 2% 2%;
-            background-color: #fff4e3;
+            background-color: var(--primary-color);
             border-radius: 0.5rem;
 
             .service-feature-title {
                 margin-top: 22px;
                 font-size: 1.5rem;
                 font-weight: bold;
-                color: #636350;
+                color: var(--text-color-primary);
             }
             .service-feature-text {
                 margin: 28px auto;
                 text-align: left;
                 width: 200px;
-                color: #636350;
+                color: var(--text-color-primary);
             }
         }
     }

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import img1 from "../../assets/1.jpeg";
+import img2 from "../../assets/hero-background.jpg";
 
 import "./Hero.scss";
 
 const Hero = () => {
     return (
-        <div className='hero'>
+        <div id='hero' className='hero'>
             <div className='hero-heading'>EXPLORE THE WORLD</div>
             <div className='hero-text'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur

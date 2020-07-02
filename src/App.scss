@@ -1,9 +1,11 @@
+@import "./GlobalStyles/color";
+
 * {
     background-origin: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
+    background-color: var(--primary-color);
     margin: 0;
 }

@@ -1,5 +1,7 @@
+@import "../../GlobalStyles/color";
+
 .app-bar {
-    color: #40514e;
+    color: var(--text-color-primary);
     margin: auto 10%;
     margin-top: 20px;
     display: flex;

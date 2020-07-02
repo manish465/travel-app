@@ -9,8 +9,8 @@ const Services = () => {
         <div className='services'>
             <div className='services-heading'>OUR SERVICE</div>
             <div className='services-features'>
-                {data.map((el) => (
-                    <div className='services-feature'>
+                {data.map((el, key) => (
+                    <div key={key} className='services-feature'>
                         <div className='service-feature-title'>
                             {el.heading}
                         </div>
