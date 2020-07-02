@@ -1,0 +1,25 @@
+.footer {
+    margin-top: 60px;
+    background-color: #30e3ca;
+    padding: 70px;
+    .footer-title {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #40514e;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        color: #40514e;
+        .footer-content-contact {
+            margin-top: 16px;
+        }
+        .footer-content-social {
+            list-style: none;
+            display: flex;
+            .footer-content-social-icon {
+                margin: 0 10px;
+            }
+        }
+    }
+}
