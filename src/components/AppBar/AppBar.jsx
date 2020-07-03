@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 
 import "./AppBar.scss";
 
+import { motion } from "framer-motion";
+
 import CardTravelIcon from "@material-ui/icons/CardTravel";
 import NightsStayIcon from "@material-ui/icons/NightsStay";
 import PersonIcon from "@material-ui/icons/Person";
@@ -50,22 +52,29 @@ const AppBar = ({ nightMode, setNightMode, navBar, setNavBar }) => {
 
     return (
         <div className='app-bar'>
-            <div className='app-bar-logo'>
+            <motion.div
+                whileHover={{ scale: 1.5 }}
+                whileTap={{ color: "#fff" }}
+                className='app-bar-logo'>
                 <CardTravelIcon />
                 <span className='app-bar-logo-text'>TRAVELz.</span>
-            </div>
+            </motion.div>
             <div className='app-bar-tabs'>
-                <div
+                <motion.div
+                    whileHover={{ scale: 1.5, rotateZ: 360 }}
                     onClick={() => setNightMode(!nightMode)}
                     className='app-bar-tab'>
                     {nightMode ? <WbSunnyIcon /> : <NightsStayIcon />}
-                </div>
-                <div onClick={() => setNavBar(!navBar)} className='app-bar-tab'>
+                </motion.div>
+                <motion.div
+                    whileHover={{ scale: 1.5 }}
+                    onClick={() => setNavBar(!navBar)}
+                    className='app-bar-tab'>
                     {navBar ? <CloseIcon /> : <MenuIcon />}
-                </div>
-                <div className='app-bar-tab'>
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.5 }} className='app-bar-tab'>
                     <PersonIcon />
-                </div>
+                </motion.div>
             </div>
         </div>
     );
