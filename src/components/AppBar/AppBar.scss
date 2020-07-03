@@ -1,6 +1,8 @@
 @import "../../GlobalStyles/color";
 
 .app-bar {
+    z-index: 10;
+    position: relative;
     color: var(--text-color-primary);
     margin: auto 10%;
     margin-top: 20px;

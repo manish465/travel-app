@@ -7,8 +7,9 @@ import NightsStayIcon from "@material-ui/icons/NightsStay";
 import PersonIcon from "@material-ui/icons/Person";
 import MenuIcon from "@material-ui/icons/Menu";
 import WbSunnyIcon from "@material-ui/icons/WbSunny";
+import CloseIcon from "@material-ui/icons/Close";
 
-const AppBar = ({ nightMode, setNightMode }) => {
+const AppBar = ({ nightMode, setNightMode, navBar, setNavBar }) => {
     useEffect(() => {
         if (nightMode) {
             document.documentElement.style.setProperty(
@@ -59,8 +60,8 @@ const AppBar = ({ nightMode, setNightMode }) => {
                     className='app-bar-tab'>
                     {nightMode ? <WbSunnyIcon /> : <NightsStayIcon />}
                 </div>
-                <div className='app-bar-tab'>
-                    <MenuIcon />
+                <div onClick={() => setNavBar(!navBar)} className='app-bar-tab'>
+                    {navBar ? <CloseIcon /> : <MenuIcon />}
                 </div>
                 <div className='app-bar-tab'>
                     <PersonIcon />
