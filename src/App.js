@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import "./App.scss";
 
+import { AnimatePresence } from "framer-motion";
+
 import AppBar from "./components/AppBar/AppBar";
 
 import Home from "./pages/Home";
@@ -18,7 +20,8 @@ const App = () => {
                 navBar={navBar}
                 setNavBar={setNavBar}
             />
-            {navBar ? <NavBar /> : <Home />}
+            <AnimatePresence>{navBar ? <NavBar /> : null}</AnimatePresence>
+            {navBar ? null : <Home />}
         </>
     );
 };
