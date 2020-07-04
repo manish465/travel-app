@@ -21,7 +21,7 @@ const App = () => {
                 setNavBar={setNavBar}
             />
             <AnimatePresence>{navBar ? <NavBar /> : null}</AnimatePresence>
-            {navBar ? null : <Home />}
+            <AnimatePresence>{navBar ? null : <Home />}</AnimatePresence>
         </>
     );
 };
