@@ -8,7 +8,9 @@ import "./NavBar.scss";
 
 import { data } from "../../data/navData";
 
-const NavBar = () => {
+import { Link } from "react-router-dom";
+
+const NavBar = ({ navBar, setNavBar }) => {
     return (
         <motion.div
             initial={{ y: "-100%", skewY: 6 }}
@@ -18,9 +20,13 @@ const NavBar = () => {
             className='nav-bar'>
             <div className='nav-bar-navs'>
                 {data.map((el, key) => (
-                    <div key={key} className='nav-bar-nav'>
-                        {el}
-                    </div>
+                    <Link
+                        onClick={() => setNavBar(!navBar)}
+                        key={key}
+                        to={el.path}
+                        className='nav-bar-nav'>
+                        {el.name}
+                    </Link>
                 ))}
             </div>
             <div className='nav-bar-motion-paper'>

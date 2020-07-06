@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import "./App.scss";
 
+import { Switch, Route } from "react-router-dom";
+
 import { AnimatePresence } from "framer-motion";
 
 import AppBar from "./components/AppBar/AppBar";
@@ -20,8 +22,18 @@ const App = () => {
                 navBar={navBar}
                 setNavBar={setNavBar}
             />
-            <AnimatePresence>{navBar ? <NavBar /> : null}</AnimatePresence>
-            <AnimatePresence>{navBar ? null : <Home />}</AnimatePresence>
+            <AnimatePresence>
+                {navBar ? (
+                    <NavBar navBar={navBar} setNavBar={setNavBar} />
+                ) : null}
+            </AnimatePresence>
+            <AnimatePresence>
+                {navBar ? null : (
+                    <Switch>
+                        <Route path='/' exact component={Home} />
+                    </Switch>
+                )}
+            </AnimatePresence>
         </>
     );
 };
